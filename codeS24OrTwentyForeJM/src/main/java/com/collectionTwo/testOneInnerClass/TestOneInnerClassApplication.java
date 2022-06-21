@@ -1,4 +1,4 @@
-package com.collectionTwo.testOneCollection;
+package com.collectionTwo.testOneInnerClass;
 
 public class TestOneInnerClassApplication {
     public static void main(String[] args) {

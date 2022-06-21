@@ -1,4 +1,4 @@
-package com.collectionTwo.testOneCollection;
+package com.collectionTwo.testOneInnerClass;
 
 public class Outer {
 
