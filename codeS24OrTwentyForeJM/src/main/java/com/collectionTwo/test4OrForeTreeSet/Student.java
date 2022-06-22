@@ -1,6 +1,9 @@
 package com.collectionTwo.test4OrForeTreeSet;
 
 public class Student implements Comparable<Student> {
+
+    // Comparable<Student> : Sort based on Student
+
     private String firstName;
     private String lastName;
     private int id;

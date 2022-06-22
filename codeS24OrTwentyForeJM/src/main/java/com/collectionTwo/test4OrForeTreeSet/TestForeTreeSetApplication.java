@@ -29,8 +29,6 @@ public class TestForeTreeSetApplication {
         studentList.add(studentThree);
         studentList.add(studentFore);
 
-        System.out.println();
-
         System.out.println("Before sorting : " + studentList);
 
         Collections.sort(studentList);
