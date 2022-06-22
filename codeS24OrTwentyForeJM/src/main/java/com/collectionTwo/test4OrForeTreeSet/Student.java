@@ -20,6 +20,9 @@ public class Student implements Comparable<Student> {
     @Override
     public int compareTo(Student o) {
         return id - o.id;
+
+        // id is new id but o.id is id previous
+
     }
 
     @Override
