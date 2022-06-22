@@ -21,6 +21,7 @@ public class Student implements Comparable<Student> {
     public int compareTo(Student o) {
         return id - o.id;
 
+        // Sort is id
         // id is new id but o.id is id previous
 
     }
