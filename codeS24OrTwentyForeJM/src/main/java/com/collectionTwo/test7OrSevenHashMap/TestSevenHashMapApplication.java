@@ -1,6 +1,7 @@
 package com.collectionTwo.test7OrSevenHashMap;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 public class TestSevenHashMapApplication {
@@ -24,10 +25,10 @@ public class TestSevenHashMapApplication {
         Student studentFive = new Student(28, "Ali", "Aliani");
 
         Map<Integer, Student> mapTwo = new HashMap<>();
-        mapTwo.put(100, studentOne);
-        mapTwo.put(250, studentTwo);
-        mapTwo.put(120, studentThree);
-        mapTwo.put(28, studentFive);
+        mapTwo.put(studentOne.getId(), studentOne);
+        mapTwo.put(studentTwo.getId(), studentTwo);
+        mapTwo.put(studentThree.getId(), studentThree);
+        mapTwo.put(studentFive.getId(), studentFive);
 
         System.out.println(mapTwo.get(120).getFirstName());
 
@@ -62,6 +63,17 @@ public class TestSevenHashMapApplication {
             System.out.println();
             System.out.println(mapTwo.get(20000).getFirstName());
         }
+
+        System.out.println();
+        for (Map.Entry<Integer, Student> entry : mapTwo.entrySet()) {
+            System.out.println("Key : " + entry.getKey() + " , Value : " + entry.getValue());
+        }
+        /*System.out.println();
+        Iterator<Map.Entry<Integer,Student>> myIterator = mapTwo.entrySet().iterator() ;
+        while (myIterator.hasNext()){
+            Map.Entry<Integer,Student> entry = myIterator.next();
+            System.out.println("Key : "+entry.getKey()+" , Value : "+entry.getValue());
+        }*/
 
     }
 }
